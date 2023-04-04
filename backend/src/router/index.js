@@ -82,6 +82,9 @@ const routes = [
         path: "/login",
         name: "login",
         component: Login,
+        meta: {
+          requiresGuest: true
+        }
     },
     {
         path: "/request-password",

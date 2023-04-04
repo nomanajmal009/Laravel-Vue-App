@@ -1,9 +1,9 @@
 export default {
     user: {
-        token: "1234",
+        token: sessionStorage.getItem('TOKEN'),
         data: {
-          id: "1",
-          name: "Muhammad Noman Ajmal"
+        //   id: "1",
+        //   name: "Muhammad Noman Ajmal"
         },
     },
     products: {
