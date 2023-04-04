@@ -20,7 +20,7 @@ Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
 
 Route::middleware(['auth:sanctum', 'admin'])->group(function () {
     Route::get('/user', [\App\Http\Controllers\AuthController::class, 'getUser']);
-    Route::get('/logout', [\App\Http\Controllers\AuthController::class, 'logout']);
+    Route::delete('/logout', [\App\Http\Controllers\AuthController::class, 'logout']);
 });
 
 Route::post('login', [\App\Http\Controllers\AuthController::class, 'login']);
