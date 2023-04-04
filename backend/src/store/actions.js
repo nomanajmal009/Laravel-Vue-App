@@ -18,7 +18,7 @@ export function login({commit}, data) {
 }
 
 export function logout({commit}) {
-  return axiosClient.post('/logout')
+  return axiosClient.delete('/logout')
     .then((response) => {
       commit('setToken', null)
 
